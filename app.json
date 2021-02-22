@@ -1,45 +1,44 @@
 {
-   "name":"TeleGraUploaderBot",
-   "description":"upload and get link of yiur image using telegra.ph",
-   "keywords":[
-      "bot",
-      "image",
-      "telegram",
-      "telegraph",
-      "upload",
-      "other"
-   ],
-   "website":"https://github.com/MudabbirulSaad/LinkShrinkerBot",
-   "repository":"https://github.com/MudabbirulSaad/LinkShrinkerBot",
-   "env":{
-      "BOT_TOKEN":{
-         "description":"Your bot token",
-         "value":"12345678:ahdjdkfhdjdkdhdkdhdkhfj"
-      },
-      "WELCOME_TEXT":{
-         "description":"Add your beloving text what you want to add in /start command",
-         "value":"Hi, I'm a Telegraph uploader bot. Send me any image to get link!"
-      },
-      "HELP_TEXT":{
-         "description":"Add text what you wanna show in /help text",
-         "value":"Send ne any picture!"
-      },
-      "MAINTAINER":{
-         "description":"Add your @username and it will be shown in bot""value":"@Username"
-      }
-   },
-   "addons":[
-      
-   ],
-   "buildpacks":[
-      {
-         "url":"heroku/python"
-      }
-   ],
-   "formation":{
-      "worker":{
-         "quantity":1,
-         "size":"free"
-      }
-   }
+    "name": "TeleGraUploaderBot",
+    "description": "upload and get link of yiur image using telegra.ph",
+    "keywords": [
+        "bot",
+        "image",
+        "telegram",
+        "telegraph",
+        "upload",
+        "other"
+    ],
+    "website": "https://github.com/MudabbirulSaad/LinkShrinkerBot",
+    "repository": "https://github.com/MudabbirulSaad/LinkShrinkerBot",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token",
+            "value": "12345678:ahdjdkfhdjdkdhdkdhdkhfj"
+        },
+        "WELCOME_TEXT": {
+            "description": "Add your beloving text what you want to add in /start command",
+            "value": "Hi, I'm a Telegraph uploader bot. Send me any image to get link!"
+        },
+        "HELP_TEXT": {
+            "description": "Add text what you wanna show in /help text",
+            "value": "Send ne any picture!"
+        },
+        "MAINTAINER":  {
+            "description": "Add your @username and it will be shown in bot",
+            "value": "@Username"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
